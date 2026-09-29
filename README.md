@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# TechAI 🤖
+
+TechAI is an AI-powered technology assistant built with Next.js and Hugging Face.
+
+It helps users ask questions about programming, web development, and technology through a simple and modern chat interface.
+
+## Features
+
+- 🤖 AI-powered chat
+- 💬 Chat history
+- 🔄 Regenerate AI responses
+- 📋 Copy AI responses
+- 💻 Code syntax highlighting
+- 📋 Copy code blocks
+- 🎨 Multiple themes
+- 📱 Responsive design
+- 💾 Local chat storage
+- ⚡ Next.js App Router
+
+## Tech Stack
+
+- Next.js
+- React
+- JavaScript
+- Hugging Face API
+- React Markdown
+- Remark GFM
+- React Syntax Highlighter
+- CSS
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone YOUR_REPOSITORY_URL
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env.local` file in the root of the project:
+
+```env
+HF_TOKEN=your_huggingface_token
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Environment Variables
 
-## Learn More
+The Hugging Face API token is stored in `.env.local` and is not included in the repository for security reasons.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+ai-chatbot/
+├── app/
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.js
+│   ├── globals.css
+│   ├── layout.js
+│   └── page.js
+├── public/
+├── .env.local
+├── .gitignore
+├── package.json
+└── README.md
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Author
 
-## Deploy on Vercel
+Bita Karimi
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built with Next.js and Hugging Face.
